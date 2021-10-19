@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --backgroud-color: #333647;
+    --secondary-color: #bbbbbb;
+    --bg-color-of-lists-in-skills-section: #81818180;
+    --bg-color-for-form-inputs: #d34d0024;
+    --border-color-for-form-inputs: #232432;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--backgroud-color) !important;
+}
+
+h1, h2, h4, h4, h5, h6, p, span, a{
+    cursor: pointer;
+}
+canvas.particles-js-canvas-el{
+    position: absolute;
+    height: 100% !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1000;
+    margin: 0px;
+
+}
+
+/* Navbar */
+
+.nav_section .navbar-brand{
+    font-size: 22px;
+}
+
+.nav_section .navbar-brand span{
+    color: var(--pink-color);
+}
+
+.nav_section .navbar-nav li{
+    margin: 0px 8px
+}
+
+.nav_section .navbar-nav li a{
+    color: white !important;
+    font-size: 15px;
+}
+
+.nav_section .navbar-nav .nav-link::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background-color: white;
+    transform: 0.5s;
+    bottom: 7px;
+}
+
+.nav_section .navbar-nav .nav-link:hover::before{
+    content: "";
+    height: 2px;
+    width: 17px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+}
+
+.hero_section .row{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.hero_section .row h1,h2,h3,p{
+    color: white;
+}
+
+.hero_section .row h3{
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+}
+
+.hero_section .row h3::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    margin-left: 6px;
+}
+
+.hero_section .row h1{
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.hero_section .row h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 8px 0px;
+}
+
+.hero_section .row p{
+    font-size: 13px;
+    margin-top: 13px;
+    line-height: 21px;
+    color: var(--secondary-color);
+}
+
+.hero_section .row button{
+    border-radius: 10px;
+    font-size: 19px;
+    color: white;
+    background-color: var(--backgroud-color);
+    border: 3px solid var(--secondary-color);
+    width: 113px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+}
+.hero_section .row button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+    .hero_section .row h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 993px) and (min-width: 763px) {
+    .hero_section .row h1{
+        font-size: 43px;
+    }
+    .hero_section .row p{
+        font-size: 25px;
+    }
+}
+@media (max-width: 763px) and (min-width: 500px) {
+    .hero_section{
+        margin: 135px 0px;
+    }
+    .hero_section .btn_container{
+        justify-content: center;
+        text-align: center;
+    }
+    .hero_section .row h1{
+        font-size: 42px;
+    }
+    .hero_section .row p{
+        font-size: 11px;
+    }
+    .hero_section .row h3{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .hero_section .row h3::after{
+        width: 0px;
+    }
+}
+
+/* About us */
+.about_section{
+    background-color: #282A39;
+    padding: 170px 0px;
+}
+
+.about_section #heading{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    line-height: 57px;
+}
+
+.about_section .let_talk{
+    font-weight: 400;
+    color: white;
+    margin-top: 14px;
+}
+
+.about_section #info_gmail{
+    color: #999999;
+    font-size: 15px;
+    margin-top: 35px;
+    word-spacing: 6px;
+    font-weight: 600;
+}
+
+.about_section .contact_info{
+    color: white;
+    margin-top: 15px;
+}
+
+.about_section .contact_info h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 6px;
+}
+
+.about_section .about_me_right_section #text{
+    font-size: 15px;
+    margin-top: 13px;
+    line-height: 25px;
+    color: white
+}
+
+.about_section .about_me_right_section hr{
+    margin: 0px;
+    border: 0.5px solid white;
+    width: 12rem;
+}
+
+.about_section .about_me_right_section table td{
+    border: none;
+    color: white;
+    font-size: 13px;
+}
+
+.about_section .about_me_right_section button{
+    border-radius: 7px;
+    font-size: 15px;
+    /* color: white; */
+    
+    background-color: white;
+    margin-top: 7px;
+    font-family: "Poppins", sans-serif;
+}
+
+.about_section .about_me_right_section button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+
+@media (max-width: 993px) and (min-width: 768px){
+    .about_section .about_me_right_section #text{
+        font-size: 12px;
+    }
+    .about_section #heading {
+        font-size: 27px !important;
+    }
+}
+
+@media (max-width: 529px) and (min-width: 500px){
+    .about_section #heading{
+        font-size: 20px;
+    }
+}
+
+/* <Skills Section> */
+.skills_section {
+    padding: 100px 0px;
+}
+
+.skills_section_.left_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills_section #heading{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.skills_section hr{
+    border: 0.5px solid white;
+    width: 6rem;
+    margin: 12px 0px;
+}
+
+.skills_section p{
+    color: white;
+    font-size: 13px;
+}
+
+.skills_section .social_media_icons .list_group_item{
+    border: none;
+    color: white;border-left: 2px solid var(--secondary-color);
+    border-radius: 0px;
+    width: 200px;
+    margin: 5px 0px;
+    font-size: 14px;
+    background-color: var(--bg-color-of-lists-in-skills-section);
+    padding: 14px;
+}
+
+.skills_section .social_media_icons .list_group_item a{
+    transition: 0.5s;
+}
+
+.skills_section .social_media_icons .list_group_item:hover a{
+    margin-left: 10px;
+}
+
+.skills_section_right_section .each_skills{
+    margin: 25px 0px;
+}
+
+.skills_section_right_section .each_skills span{
+    color: white !important;
+    font-size: 14px;
+}
+
+.skills_section_right_section .each_skills .progress{
+    background: var(--bg-color-of-lists-in-skills-section);
+    border-radius: 100px;
+    margin-top: 3px;
+    height: 10px;
+}
+
+.skills_section_right_section .each_skills .progress-bar{
+    background-color: white !important;
+    color: transparent;
+}
+
+/* My portfolio section */
+.portfolio_section{
+    background: #282A39;
+    padding: 170px 0px;
+}
+
+.portfolio_section .nav-tabs{
+    border: none;
+    width: 30%;
+    text-align: center;
+}
+
+.portfolio_section .nav-tabs .nav-link.active{
+    border: none;
+    color: white;
+    border-bottom: 2px solid var(--secondary-color);
+    background: transparent;
+}
+
+/* Blogs Section */
+
+.blogs_section{
+    background: #333647;
+    padding-bottom: 170px;
+    align-items: center;
+}
+
+.blogs_section .card{
+    background: gray;
+    
+}
+
+.blogs_section .card:hover{
+    animation: pulse;
+    animation-duration: 0.5s;
+}
+
+.blogs_section #heading{
+    text-align: center !important;
+    color: white !important;
+}
+
+/* Contact Section */
+
+.contact_section{
+    background: #282a39;
+    padding: 170px;
+}
+
+.contact_section .heading{
+    font-weight: 400; font-size: 50px;
+
+}
+
+.contact_section hr{
+    width: 6rem;
+    border: 0.5px solid red;
+    margin: 12px 0px;
+
+}
+
+.contact_section p{
+    font-size: 30px;
+
+}
+
+.contact_section form .form-control{
+    background: black;
+    border-radius: 0px;
+    color: white;
+}
+
+.contact_section form button{
+    border-radius: 2px var(--secondary-color);
+    color: white;
+    width: 100px;
+    font-size: 15px;
+    background: brown;
+}
+
+
+.contact_section ul li{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.contact_section ul li .fa{
+    color: orange;
+    
+}
+    /* Footer */
+
+.footer_area{
+    margin-top: 13px;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.footer_area .navbar-brand{
+    font-size: 23px;
+}
+
+.footer_area .logo-area .fa{
+    color: white;
+    font-size: 17px !important;
+    /* border: 2px solid brown; */
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 100%;
+}
+
+.footer_area .logo-area .fa:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+
+.footer_area .row .column .heading{
+    font-weight: 400 !important;
+    font-size: 20px;
+    color: white !important;
+}
